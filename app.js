@@ -19,4 +19,7 @@ app.get('/login', (req, res) => {
     res.sendFile(path.resolve('./views/login.html'));
 })
 
-app.listen(3000, () =>  console.log('Servidor corriendo'));
+const PORT = process.env.PORT || 3000;
+
+app.listen(process.env.PORT || 3000, () =>  console.log('Servidor corriendo en ' + PORT)); 
+//Esto significa: ** si existe la variable PORT, usar el dato ** || ** si no directo a 3000
