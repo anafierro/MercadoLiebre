@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre: Registro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/433c4ae66d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img class="logo" src="static/images/logo-mercado-liebre.svg"/>
+            <form action="GET">
+                <input type="text" name="barra-busqueda" placeholder="Buscar productos y más">
+                <span class="submit"><i class="fa fa-search"></i></span>
+            </form>
+            <h2 class="copy-header" style="font-weight: bold;">
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+        
+        <a href="#" class="hamburguer-button">
+            <i class="fas fa-bars"></i>
+        </a>
+        
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href = "/">Ofertas</a></li>
+                <li><a href = "#">Tiendas Oficiales</a></li>
+                <li><a href = "#">Vender</a></li>
+                <li><a href = "#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href = "/register">Creá tu cuentas <span class="idcard"><i class="far fa-id-card"></i></span></a></li>
+                <li><a href = "/login">Ingresá <span class="login"><i class="fas fa-sign-in-alt"></i></span></a></li>
+                <li><a href = "#">Mis compras <span class="basket"><i class="fas fa-shopping-basket"></i></span></a></li>
+            </ul>
+        </nav>
+        <section class="banner"><img src="static/images/img-home-banner.jpg" alt="Banner" style="width: 100%;"></section>
+    </header>
+    <main>
+        <form class="register-form" action="/">
+            <div class="control-formulario">
+                <input required type="text" name="nombre" placeholder="Nombre y apellido" minlength="3">
+            </div>
+            <div class="control-formulario">
+                <input required type="text" name="usuario" placeholder="Nombre de usuario" minlength="5">
+            </div>
+            <div class="control-formulario">
+                <input required type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="control-formulario">
+                <label>Fecha de nacimiento</label>
+                <input required type="date" name="fechaNacimiento" placeholder="123.56" class="control">
+            </div>
+            <div class="control-formulario">
+                <input required type="text" name="domicilio" placeholder="Domicilio" minlength="5">
+            </div>
+            <div class="control-formulario">
+                <label>Perfil de usuario</label>
+                <label>
+                    <input required type="radio" name="perfilUsuario">Comprador
+                </label>
+                <label>
+                    <input required type="radio" name="perfilUsuario">Vendedor
+                </label>
+            </div>
+            <div class="control-formulario">
+                <label>Intereses</label>
+                <label>
+                    <input required type="checkbox" name="intereses">Electro
+                </label>
+                <label>
+                    <input required type="checkbox" name="intereses">Moda
+                </label>
+                <label>
+                    <input required type="checkbox" name="intereses">Hogar
+                </label>
+                <label>
+                    <input required type="checkbox" name="intereses">Juguetería
+                </label>
+                <label>
+                    <input required type="checkbox" name="intereses">Vida sana
+                </label>
+            </div>
+            <div class="control-formulario">
+                <label>Foto de perfil</label>
+                <input type="file" name="fotoPerfil" accept=".jpg, .png">
+            </label>
+            </div>
+            <div class="control-formulario">
+                <input required type="password" name="contraseña" placeholder="Contraseña" minlength="7">
+            </div>
+            <div class="control-formulario">
+                <input required type="password" name="confirmarContraseña" placeholder="Confirmar contraseña" minlength="7">
+            </div>
+            <button type="reset" class="boton-formulario">Borrar</button>
+            <button type="submit" class="boton-formulario">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
