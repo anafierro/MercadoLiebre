@@ -152,7 +152,6 @@ input:invalid {
 }
 
 .main-navbar {
-    padding: 20px;
     display: none;
 }
 
@@ -161,19 +160,12 @@ input:invalid {
       background-color: #EAC926;
 }
 
-.tarjeta {
-      text-align: center;
-      color: #1259c3;
-  }
-
-.regalo {
-    text-align: center;
-    color: #1259c3;
-  }
-
+.tarjeta,
+.regalo,
 .seguridad {
-    text-align: center;
-    color: #1259c3;
+      text-align: center;
+      font-size: 2em;
+      color: #1259c3;
   }
 
 .tarjeta:hover,
@@ -204,7 +196,12 @@ input:invalid {
 }
 
 .ultima-visita {
-    margin-top: 430px;
+    margin-top: 400px;
+}
+
+.login-form,
+.register-form {
+    margin-top: 450px;
 }
 
 .envio {
@@ -250,14 +247,6 @@ input:invalid {
     padding: 20px 15px;
 }
 
-.login-form {
-    margin-top: 430px;
-}
-
-.register-form {
-    margin-top: 430px;
-}
-
 .control-formulario {
     margin-bottom: 15px;
 }
@@ -294,7 +283,6 @@ input:invalid {
 .product {
     padding: 0px 15px;
     position: relative;
-    margin: 30px 15px;
 }
 
 .product img {
@@ -334,6 +322,7 @@ input:invalid {
 
 .footer-box {
     display: flex;
+    flex-direction: column;
 }
 
 .footer-box-1,
@@ -372,6 +361,10 @@ article:hover .envio i{
 }
 
 @media (min-width: 361px) {
+    .ultima-visita {
+        margin-top: 380px;
+    }
+
     article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -385,6 +378,22 @@ article:hover .envio i{
 
     main section div.products article {
         width: 45%;
+    }
+}
+
+@media (min-width: 480px) {
+    .ultima-visita {
+        margin-top: 400px;
+    }
+}
+
+@media (min-width: 580px) {
+    .ultima-visita {
+        margin-top: 450px;
+    }
+
+    .login-form {
+        margin-top: 490px;
     }
 }
 
@@ -414,11 +423,11 @@ article:hover .envio i{
     }
     
     .ultima-visita {
-        margin-top: 450px;
+        margin-top: 430px;
     }
     
     .login-form {
-        margin-top: 450px;
+        margin-top: 480px;
     }
 
     .register-form {
@@ -427,6 +436,18 @@ article:hover .envio i{
 
     footer {
         font-size: 12px;
+    }
+
+    .footer-box {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 990px) {
+    .ultima-visita,
+    .login-form,
+    .register-form {
+        margin-top: 530px;
     }
 }
 
@@ -442,10 +463,6 @@ article:hover .envio i{
 
     .main-header-top-bar {
         align-items: center;
-    }
-
-    .main-navbar {
-        margin-top: 40px;
     }
 
     .main-navbar a {
@@ -470,15 +487,13 @@ article:hover .envio i{
         width: 22%;
     }
 
-    .ultima-visita {
-        margin-top: 600px;
-    }
-    
-    .login-form {
-        margin-top: 600px;
-    }
-
     .register-form {
         margin-top: 600px;
     }
+
+    .ultima-visita,
+    .login-form {
+        margin-top: 580px;
+    }
+
 }
